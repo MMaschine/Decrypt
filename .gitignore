@@ -1,0 +1,116 @@
+############################################
+# GENERAL
+############################################
+.DS_Store
+Thumbs.db
+
+############################################
+# NODE / ANGULAR
+############################################
+node_modules/
+dist/
+tmp/
+out-tsc/
+coverage/
+
+# Angular environment files (optional if sensitive)
+src/environments/*.local.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE (frontend)
+.vscode/
+.idea/
+
+############################################
+# .NET
+############################################
+
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Rider / ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio
+.vs/
+
+# Logs
+*.log
+
+# Publish
+publish/
+*.publishsettings
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+!packages/build/
+
+# EF Core
+Migrations/*.Designer.cs
+Migrations/*Snapshot.cs
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+############################################
+# TESTS
+############################################
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+############################################
+# OS / TEMP
+############################################
+*.tmp
+*.temp
+*.swp
+*.cache
+
+############################################
+# SECRETS (IMPORTANT)
+############################################
+appsettings.Development.json
+appsettings.*.local.json
+.env
+.env.*
+
+############################################
+# DOCKER
+############################################
+docker-compose.override.yml
+
+############################################
+# AZURE
+############################################
+.azure/
+
+############################################
+# MISC
+############################################
+*.bak
+*.old
+*.orig
+Frontend/.angular/
