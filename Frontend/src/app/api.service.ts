@@ -1,6 +1,7 @@
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable, catchError, throwError } from 'rxjs';
+import { environment } from 'src/environment/environment';
 
 export interface DashboardSummary {
   totalOrganizations: number;
@@ -46,7 +47,7 @@ export interface Project {
 @Injectable({ providedIn: 'root' })
 export class ApiService {
   private readonly http = inject(HttpClient);
-  private readonly baseUrl = 'https://localhost:7167/api';
+  private readonly baseUrl = environment.apiUrl;;
 
   getDashboard(): Observable<DashboardSummary> {
     return this.get<DashboardSummary>('/dashboard');
