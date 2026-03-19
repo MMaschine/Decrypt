@@ -1,0 +1,29 @@
+Remarks for futher development
+
+1. For now I made Currency separate reference entity because it is reused in Organization and Invoice. For a small demo project I prefered not to increase complexity more. But in larger evolving system i would consider to separate this entites also: 
+
+	Organization: 
+		- tier
+		- industry 
+		- locale 
+		- possibly timezone 
+    
+	User: 
+		- role
+	
+	Project & Invoice:
+		- status
+	
+	
+2. Invoice connected with both Project and Organization. Need more details about the domain - do we have invoices independent from projects?. Direct organization connection can be redundant or we should make ProjectId nullable.  
+
+3. Can TimeEntry has hours == 0? If no, validation in parser should be updated 
+
+4. Different public messages from aPI - to resourses storage or at least class with constants 
+
+5. Use dtos for requests with more then 3 params (like GetTimeEntries)
+
+6. In bigger project things like "DashboardDto" better to place in "Decrypt.Domain", I decided not to bloat the structure for demo project 
+
+7. If data migration utility should be developed for real tasks method of data savaing (SaveDataAsync) better to be refactorted 
+
