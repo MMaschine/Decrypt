@@ -92,6 +92,11 @@ nav a {
   color: #5b21b6;
 }
 
+.badge--planned{
+  background: #fff1e8;
+  color: #d8c40b;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
