@@ -2,7 +2,10 @@
 
 Decrypt Demo
 
+---
 
+This demo project is currently configured to work with Microsoft SQL Server using Windows Authentication, so the following connection string should work as-is:
+Server=localhost;Database=Decrypt;Trusted_Connection=True;TrustServerCertificate=True;
 
 I added two .bat files to make setup easier:
 
